@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector!</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Crystal Collector!</h1>
+    </div>
+    <div class="instructions">
+        <h2>Here's how to play the game:</h2>
+        <br>
+        <ol>
+            <li>Try to match the random number displayed below at the start of the game ("Number to match") by collecting crystal points.</li>
+            <li>Each crystal below is worth a certain number of points, which can only be revealed by clicking on it.</li>
+            <li>Clicking on a crystal will add those points to your total score.</li>
+            <li>If you are able to match the "Number to match" by collect the exact amount of crystal points, you win!</li>
+            <li>If the amount of crystal points you collect adds up to more than the "Number to", you lose.</li>
+            <li>Each time the game starts, a new random number is generated, and the values of the crystals change...tricky!</li>
+            <li>Good luck and have fun!</li>
+        </ol>
+        <br>
+    </div>
+
+<!--here is where the player sees the number to match (randomly generated from jquery)-->
+    <div class="numberToGet">
+        <h2>Number to match:</h2>
+            <span id="randomNumber"></span>
+    </div> 
+
+<!--here is the player's tallied score-->
+<div class="userTotal">
+        <h2>Your collected crystal points:
+            <span id="finalTotal"></span>
+        </h2>
+    </div>
+
+<!--here are the crystal images-->
+    <div class="crystals">
+        <img src="assets/images/Screen Shot 2018-10-09 at 1.53.40 PM.png" class=crystalimage id="one" alt="white crystal">
+        <img src="assets/images/Screen Shot 2018-10-09 at 1.54.40 PM.png" class=crystalimage id="two" alt="purple crytal">
+        <img src="assets/images/Screen Shot 2018-10-09 at 2.01.01 PM.png" class=crystalimage id="three" alt="green crystal">
+        <img src="assets/images/Screen Shot 2018-10-09 at 9.41.19 PM.png" class=crystalimage id="four" alt="blue crystal">
+    </div>
+
+<!--tallies for wins and losses-->
+    <div class = "winsAndLosses">
+        <h2>Wins:
+            <span id= "numberWins"></span>
+            <br>
+            Losses:
+            <span id= "numberLosses"></span>
+        </h2>
+    </div>
+    
+<!--here is the link to my Javascript code-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
