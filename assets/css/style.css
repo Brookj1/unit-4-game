@@ -1,5 +1,18 @@
 /*this is where I have defined the sizes of the crystal images*/
 .crystalimage {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
+
+.jumbotron {
+    background-image:url("assets/images/pyrite-345637-2-2.jpg");
+    background-size:cover;
+}
+
+.display-4 {
+    color: tan;
+}
+
+.lead {
+    color: white;
+} 
